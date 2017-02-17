@@ -25,12 +25,42 @@ function changeLetter(string) {
   return newString;
 };
 
+function changeLetter2(string) {
+  let newString = "";
+  for (let i = 0; i < string.length; i++) {
+    switch (string[i]) {
+      case "b":
+        newString += "i";
+        break;
+      case "i":
+        newString += "b";
+        break;
+      case "x":
+        newString += "c";
+        break;
+      case "c":
+        newString += "x";
+        break;
+      case "k":
+        newString += "y";
+        break;
+      case "y":
+        newString += "k";
+        break;
+      default:
+        newString += string[i];
+    }
+  }
+  return newString;
+};
+
 function changeLettersInArray (array) {
   let newArray = [];
   for (let i = 0; i < array.length; i++) {
     newArray.push(changeLetter(array[i]));
+    // newArray.push(changeLetter2(array[i]));
   }
   return newArray;
 };
 
-changeLettersInArray(myArray);
+console.log(changeLettersInArray(myArray));
