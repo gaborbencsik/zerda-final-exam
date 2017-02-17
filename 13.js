@@ -26,9 +26,11 @@ function changeLetter(string) {
 };
 
 function changeLettersInArray (array) {
+  let newArray = [];
   for (let i = 0; i < array.length; i++) {
-    console.log(changeLetter(array[i]));
+    newArray.push(changeLetter(array[i]));
   }
+  return newArray;
 };
 
 changeLettersInArray(myArray);
