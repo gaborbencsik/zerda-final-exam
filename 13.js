@@ -57,8 +57,8 @@ function changeLetter2(string) {
 function changeLettersInArray (array) {
   let newArray = [];
   for (let i = 0; i < array.length; i++) {
-    newArray.push(changeLetter(array[i]));
-    // newArray.push(changeLetter2(array[i]));
+    // newArray.push(changeLetter(array[i]));
+    newArray.push(changeLetter2(array[i]));
   }
   return newArray;
 };
